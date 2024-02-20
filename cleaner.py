@@ -2,7 +2,7 @@ from os import getcwd,chdir,remove,listdir
 from shutil import rmtree
 from time import sleep
 C=""
-if(getcwd() != "C:\\"):
+while(getcwd() != "C:\\"):
 	for i in range(len(getcwd().split("\\"))-1):
     		C += "..\\"
 chdir(C+"Windows\Temp\\")
